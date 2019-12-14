@@ -8,6 +8,21 @@ class Formatter {
   }
   
   static titleize(string){
-    
+    let exceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+    let result = [];
+    let arrayOfWords = string.split(' ');
+    for (let i = 0; n < arrayOfWords.length; i++){
+      if ( n === 0 ){
+        result.push(this.capitalize(arrayOfWords[i]));
+      } else {
+        if (exceptions.includes(arrayOfWords[n])){
+          result.push(arrayOfWords[n]);
+        } else {
+          result.push(this.capitalize(arrayOfWords[n]));
+        }
+      }
+
+    }
+    return result.join(' ');
   }
 }
