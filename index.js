@@ -15,10 +15,10 @@ class Formatter {
       if ( i === 0 ){
         result.push(this.capitalize(arrayOfWords[i]));
       } else {
-        if (exceptions.includes(arrayOfWords[n])){
-          result.push(arrayOfWords[n]);
+        if (exceptions.includes(arrayOfWords[i])){
+          result.push(arrayOfWords[i]);
         } else {
-          result.push(this.capitalize(arrayOfWords[n]));
+          result.push(this.capitalize(arrayOfWords[i]));
         }
       }
 
