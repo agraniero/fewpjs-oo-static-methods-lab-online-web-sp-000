@@ -11,7 +11,7 @@ class Formatter {
     let exceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     let result = [];
     let arrayOfWords = string.split(' ');
-    for (let i = 0; n < arrayOfWords.length; i++){
+    for (let i = 0; i < arrayOfWords.length; i++){
       if ( i === 0 ){
         result.push(this.capitalize(arrayOfWords[i]));
       } else {
