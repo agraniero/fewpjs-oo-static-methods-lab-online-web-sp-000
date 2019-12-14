@@ -12,7 +12,7 @@ class Formatter {
     let result = [];
     let arrayOfWords = string.split(' ');
     for (let i = 0; n < arrayOfWords.length; i++){
-      if ( n === 0 ){
+      if ( i === 0 ){
         result.push(this.capitalize(arrayOfWords[i]));
       } else {
         if (exceptions.includes(arrayOfWords[n])){
